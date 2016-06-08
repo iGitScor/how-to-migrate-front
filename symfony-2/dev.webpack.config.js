@@ -14,7 +14,7 @@ var common = require('./common.webpack.js');
 /** Environment variable */
 var environment = 'dev';
 var environmentPath = environment + '/';
-var mdPicturePath = 'https://avatars.githubusercontent.com/u/6058056';
+var mdPicturePath = null;
 var cssPath = 'bundle.css';
 
 // Default plugins
@@ -91,7 +91,7 @@ common.postcss = function postcss() {
 
 // Watch frequency
 common.watchOptions = {
-  poll: 500,
+  poll: 200,
 };
 
 module.exports = common;
