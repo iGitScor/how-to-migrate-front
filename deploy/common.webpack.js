@@ -15,7 +15,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-        include: path.resolve('./src/Marketplace/UIBundle/Resources/private/00-Scripts'),
+        include: path.resolve('./src/[BundlePath]/Resources/private/00-Scripts'),
       },
 
     ], // End preLoaders
@@ -25,7 +25,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel',
-        include: path.resolve('./src/Marketplace/UIBundle/Resources/private/00-Scripts'),
+        include: path.resolve('./src/[BundlePath]/Resources/private/00-Scripts'),
       },
       {
         test: /\.scss$/,
@@ -37,7 +37,7 @@ module.exports = {
             'sass-loader',
           ]
         ),
-        include: path.resolve('./src/Marketplace/UIBundle/Resources/private'),
+        include: path.resolve('./src/[BundlePath]/Resources/private'),
       },
       {
         test: /\.(woff|eot|ttf)$/,
@@ -47,7 +47,7 @@ module.exports = {
           path: '',
           name: '[name].[ext]',
         },
-        include: path.resolve('./src/Marketplace/UIBundle/Resources/private'),
+        include: path.resolve('./src/[BundlePath]/Resources/private'),
       },
       {
         test: /\.(png|gif|jpe?g|svg)$/i,
@@ -57,7 +57,7 @@ module.exports = {
           path: '',
           name: '[name].[ext]',
         },
-        include: path.resolve('./src/Marketplace/UIBundle/Resources/private'),
+        include: path.resolve('./src/[BundlePath]/Resources/private'),
       },
 
     ], // End loaders

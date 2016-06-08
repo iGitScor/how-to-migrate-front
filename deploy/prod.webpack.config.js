@@ -135,7 +135,7 @@ common.plugins = [
 // Main file load configuration
 common.entry = {
   application: [
-    './src/Marketplace/UIBundle/Resources/private/00-Scripts/',
+    './src/[BundlePath]/Resources/private/00-Scripts/',
     environmentPath,
     'application.js',
   ].join(''),
